@@ -30,8 +30,8 @@
     float: left;
     /* In base alle preferenze utilizzo il padding per la spaziatura 
     tra le colonne, se non utilizzato le colonne andranno ad unirsi */
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     /* Utilizzo padding altrimenti margin si somma 
     alla width */
 }

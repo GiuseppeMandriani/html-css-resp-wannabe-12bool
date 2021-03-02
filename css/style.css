@@ -1,4 +1,4 @@
-.row {
+.row.container {
   width: 992px;
   margin-left: auto;
   margin-right: auto;
@@ -6,30 +6,32 @@
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row>.left,
+
+/* #lezioni .row>.left,
 #lezioni .row>.right {
   width: 50%;
   float: left;
-}
+} */
 
-#lezioni .row img {
-  /* per centrare orizzontalmente */
+/* #lezioni .row img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
+} */
+/* per centrare orizzontalmente */
 
 #lezioni {
   text-align: center;
 }
 
 /* BLOCCO STEPS */
-#steps .row>.left,
+
+/* #steps .row>.left,
 #steps .row>.central,
 #steps .row>.right {
   float: left;
   width: 33%;
-}
+} */
 
 #steps {
   text-align: center;
@@ -40,12 +42,14 @@
   text-align: center;
 }
 
-#why .container>.first,
-#why .container>.second,
-#why .container>.third {
+#why .container>.col-lg-12,
+#why .container>.col-lg-12,
+#why .container>.col-lg-12 {
   width: 100%;
   margin-top: 80px;
 }
+
+
 
 #why .container img {
   background-color: #428bca;
@@ -73,60 +77,34 @@ img {
 }
 
 
-/* RESPONSIVE for Mobile, da 0px a 419px */
-@media screen and (max-width: 419px) {
+/* responsive for tablet, da 419px a 991px */
+@media screen and (min-width: 419px) and (max-width: 991px){
 
-body{
-  margin: 0;
-}
+  body{
+    margin: 0;
+  }
 
-/* img{
-  height: 140px;
-  margin-top: 25px;
-} */
+  img{
+    height: 140px;
+    margin-top: 25px;
+  }
 
-#why .container{
-  margin-top:15px;
-   background-color: rgba(0, 0, 0, .5);
-}
-
-#why .container hr{
-   margin-top:30px;
-}
-
-h1{
-  font-size: 1.5rem;
-  padding-top: 15px;
-}
-
-}
-
-/* RESPONSIVE FOR TABLET, da 419px a 991px */
-@media screen and (min-width: 419px) and (max-width: 991px) {
-
-/* lezioni */
-
-#lezioni .container>.left,
-#lezioni .container>.right{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* steps */
-
-#steps .container>.left,
-#steps .container>.central,
-#steps .container>.right {
-  margin-top:30px;
-  margin-bottom:30px
-}
-
-/* perchè */
-
-#why .container{
-  margin-top:15px;
-  background-color: rgba(0, 0, 0, .5);
-}
+  h1{
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+  
+  #why .container>.col-lg-12,
+  #why .container>.col-lg-12,
+  #why .container>.col-lg-12 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  #why .container{
+    margin-top:15px;
+    background-color: rgba(0, 0, 0, .5);
+  }
 
 
 }
