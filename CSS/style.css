@@ -47,7 +47,7 @@
   margin-top: 80px;
 }
 
-#why .row img {
+#why .container img {
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px
@@ -70,4 +70,61 @@ img {
 
 .clear {
   clear: both;
+}
+
+
+/* RESPONSIVE for Mobile, da 0px a 419px */
+@media screen and (max-width: 419px) {
+
+body{
+  margin: 0;
+}
+
+img{
+  height: 140px;
+  margin-top: 25px;
+}
+
+#why .container{
+  margin-top:15px;
+   background-color: rgba(0, 0, 0, .5);
+}
+
+#why .container hr{
+   margin-top:30px;
+}
+
+h1{
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+
+}
+
+/* RESPONSIVE FOR TABLET, da 419px a 991px */
+@media screen and (min-width: 419px) and (max-width: 991px) {
+
+/* lezioni */
+
+#lezioni .container>.left,
+#lezioni .container>.right{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* steps */
+
+#steps .container>.left,
+#steps .container>.central,
+#steps .container>.right {
+  margin-top:30px;
+  margin-bottom:30px
+}
+
+#why .container{
+  margin-top:15px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+
 }
