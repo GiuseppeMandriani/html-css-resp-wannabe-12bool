@@ -1,8 +1,12 @@
-.row.container {
+/* .row{
   width: 992px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+} */
+
+.container{
+  margin-top: 30px;
 }
 
 /* BLOCCO LEZIONI */
@@ -76,6 +80,25 @@ img {
   clear: both;
 }
 
+/* responsive for mobile, da px a 418px */
+
+@media screen and (max-width:418px){
+
+  img{
+  height: 140px;
+  margin-top: 25px;
+}
+
+  h1{
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+
+  #why .container{
+  background-color: rgba(50, 0, 0, .5);
+  }
+}
+
 
 /* responsive for tablet, da 419px a 991px */
 @media screen and (min-width: 419px) and (max-width: 991px){
@@ -97,7 +120,6 @@ img {
   #why .container>.col-lg-12,
   #why .container>.col-lg-12,
   #why .container>.col-lg-12 {
-    width: 100%;
     margin-top: 10px;
   }
   
@@ -106,5 +128,10 @@ img {
     background-color: rgba(0, 0, 0, .5);
   }
 
+  #why .container hr{
+  margin-top:30px;
+ }
+
 
 }
+
