@@ -6,7 +6,7 @@
 } */
 
 .container{
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 /* BLOCCO LEZIONI */
@@ -46,9 +46,16 @@
   text-align: center;
 }
 
-#why .container>.col-lg-12,
+/* #why .container>.col-lg-12,
 #why .container>.col-lg-12,
 #why .container>.col-lg-12 {
+  width: 100%;
+  margin-top: 80px;
+} */
+
+#why .container>.col-lg-12.col-xs-12,
+#why .container>.col-lg-12.col-xs-12,
+#why .container>.col-lg-12.col-xs-12 {
   width: 100%;
   margin-top: 80px;
 }
@@ -80,13 +87,13 @@ img {
   clear: both;
 }
 
-/* responsive for mobile, da px a 418px */
+/* responsive for mobile, da px a 767px */
 
-@media screen and (max-width:418px){
+@media screen and (max-width:767px){
 
   img{
   height: 140px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
   h1{
@@ -94,14 +101,28 @@ img {
   padding-top: 15px;
 }
 
+.container {
+  margin-top: 0;
+}
+
+#why .container>.col-lg-12.col-xs-12,
+#why .container>.col-lg-12.col-xs-12,
+#why .container>.col-lg-12.col-xs-12 {
+  margin-top: 10px;
+}
+
   #why .container{
   background-color: rgba(50, 0, 0, .5);
   }
+
+  #why .container hr{
+  margin-top:30px;
+ }
 }
 
 
-/* responsive for tablet, da 419px a 991px */
-@media screen and (min-width: 419px) and (max-width: 991px){
+/* responsive for tablet, da 768px a 991px */
+@media screen and (min-width: 768px) and (max-width: 991px){
 
   body{
     margin: 0;
@@ -116,10 +137,14 @@ img {
     font-size: 1.5rem;
     padding-top: 15px;
   }
+
+  .container{
+    margin-top: 0;
+    }
   
-  #why .container>.col-lg-12,
-  #why .container>.col-lg-12,
-  #why .container>.col-lg-12 {
+  #why .container>.col-lg-12.col-xs-12,
+  #why .container>.col-lg-12.col-xs-12,
+  #why .container>.col-lg-12.col-xs-12 {
     margin-top: 10px;
   }
   
